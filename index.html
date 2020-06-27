@@ -27,6 +27,14 @@
         });
   map.data.loadGeoJson("https://raw.githubusercontent.com/rajeevtk/rajeevtk.github.io/master/geo.json");
       }
+        
+ // Set mouseover event for each feature.
+map.data.addListener('mouseover', function(event) {
+  document.getElementById('info-box').textContent =
+      event.feature.getProperty('sitename');
+});       
+        
     </script>
   </body>
 </html>
+
