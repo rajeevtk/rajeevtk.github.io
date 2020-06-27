@@ -28,8 +28,8 @@
         "marker-symbol": "circle-stroked",
         "audio": "audio goes here",
         "video": "video goes here",
-        "description": "",
-        "sitename": ""
+        "description": "desc goes here",
+        "sitename": "2nd site"
       },
       "geometry": {
         "type": "Point",
@@ -42,9 +42,13 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
+        "marker-color": "#d40101",
         "marker-size": "medium",
-        "marker-symbol": ""
+        "marker-symbol": "circle-stroked",
+        "audio": "audio goes here",
+        "video": "video goes here",
+        "description": "desc goes here",
+        "sitename": "3rd site"
       },
       "geometry": {
         "type": "Point",
