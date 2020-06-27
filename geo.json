@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e90101",
+        "marker-size": "medium",
+        "marker-symbol": "circle-stroked",
+        "audio": "audio file goes here",
+        "video": "video file goes here",
+        "description": "sample description goes here",
+        "sitename": "site name goes here"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04010248184204,
+          38.917149004985276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#d40101",
+        "marker-size": "medium",
+        "marker-symbol": "circle-stroked",
+        "audio": "audio goes here",
+        "video": "video goes here",
+        "description": "",
+        "sitename": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.03924417495726,
+          38.917182395482456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.039058431983,
+          38.91717691735507
+        ]
+      }
+    }
+  ]
+}
