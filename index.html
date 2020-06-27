@@ -15,9 +15,11 @@
       }
     </style>
   </head>
+    
   <body>
       Remembering You DC Map
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWHqhk216aQR2NQnb3dMZJO0K05PE-oNk&callback=initMap" async defer></script>
+      
     <div id="map"></div>
     <script>
       function initMap() {
@@ -25,12 +27,17 @@
           zoom: 18,
           center: {lat:  38.917067, lng: -77.041231},
         });
-      map.data.loadGeoJson("https://raw.githubusercontent.com/rajeevtk/rajeevtk.github.io/master/geo.json");
 
-     // Set mouseover event for each feature.
+      map.data.loadGeoJson("https://raw.githubusercontent.com/rajeevtk/rajeevtk.github.io/master/geo.json");
+   
+          
+      // Set mouseover event for each feature.
       map.data.addListener('click', function(event) {
-        document.getElementById('info-box').textContent =
-        event.feature.getProperty('sitename');
+            
+      var infowindow = new google.maps.InfoWindow({
+          content: event.feature.getProperty('sitename');
+      });    
+            
       });         
   }        
    </script>
