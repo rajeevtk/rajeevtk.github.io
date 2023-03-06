@@ -6,53 +6,9 @@
     <title>RememberingYouDC.org Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <style>
-    #map {
-      height: 100%;
-    }
-    /* Optional: Makes the sample page fill the window. */
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    #info-box {
-      background-color: white;
-      border: 1px solid black;
-      bottom: 30px;
-      height: 200px;
-      padding: 10px;
-      position: absolute;
-      left: 30px;
-    }
-    </style>
   </head>
     
   <body>
-
-<div style="font-size: 14px; padding-bottom: 14px;">Stats powered by <a target="_blank" style="color: #4F46E5; text-decoration: underline;" href="https://plausible.io">Plausible Analytics</a></div>
-<script async src="https://plausible.io/js/embed.host.js"></script>
-      Remembering You DC Map
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWHqhk216aQR2NQnb3dMZJO0K05PE-oNk&callback=initMap" async defer></script>
-      
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: {lat:  38.917067, lng: -77.041231},
-        });
-
-      map.data.loadGeoJson("https://raw.githubusercontent.com/rajeevtk/rajeevtk.github.io/master/geo.json");
-   
-        
-      // Set mouseover event for each feature.
-      map.data.addListener('click', function(event) {
-      document.getElementById('info-box').textContent =
-        event.feature.getProperty('sitename');
-     });          
-             
-  }        
-   </script>
+  TBD
   </body>
 </html>
